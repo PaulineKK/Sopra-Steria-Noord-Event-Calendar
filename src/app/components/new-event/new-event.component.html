@@ -1,0 +1,67 @@
+<form [formGroup]="eventForm" (ngSubmit)="submitForm()" class="event-form">
+  <h2>Create Event</h2>
+
+  <label>
+    Title
+    <input type="text" formControlName="title" />
+    @if(eventForm.controls['title'].invalid && eventForm.controls['title'].touched) {
+    <div class="error">Title is required.</div>
+    }
+  </label>
+
+  <label>
+    Description
+    <textarea rows="4" formControlName="description"></textarea>
+    @if(eventForm.controls['description'].invalid && eventForm.controls['description'].touched) {
+    <div class="error">Description is required.</div>
+    }
+  </label>
+
+  <label>
+    Category
+    <select formControlName="category">
+      <option value="">Select a category</option>
+      @for(cat of categories; track cat) {
+      <option [value]="cat">{{ cat }}</option>
+      }
+    </select>
+    @if(eventForm.controls['category'].invalid && eventForm.controls['category'].touched) {
+    <div class="error">Category is required.</div>
+    }
+  </label>
+
+  <label>
+    Start Date & Time
+    <input type="datetime-local" formControlName="startDateTime" />
+    @if(eventForm.controls['startDateTime'].invalid && eventForm.controls['startDateTime'].touched)
+    {
+    <div class="error">Start date & time is required.</div>
+    }
+  </label>
+
+  <label>
+    End Date & Time
+    <input type="datetime-local" formControlName="endDateTime" />
+    @if(eventForm.controls['endDateTime'].invalid && eventForm.controls['endDateTime'].touched) {
+    <div class="error">End date & time is required.</div>
+    }
+  </label>
+
+  <label>
+    Location
+    <input type="text" formControlName="location" />
+    @if(eventForm.controls['location'].invalid && eventForm.controls['location'].touched) {
+    <div class="error">Location is required.</div>
+    }
+  </label>
+
+  <label>
+    Url for QR-code (optional)
+    <input type="text" formControlName="qrCode" />
+  </label>
+
+  <div class="button-bar">
+    <button type="button" (click)="closeForm.emit()">Cancel</button>
+    <button type="submit">Submit</button>
+  </div>
+</form>

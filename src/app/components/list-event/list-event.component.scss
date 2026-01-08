@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.featured {
+  background-color: #dcd2e4;
+}
+
+.date {
+  align-items: center;
+  background-color: #dcd2e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+}
+
+.event-date-day {
+  font-size: 24px;
+}
+
+.info {
+  padding: 0rem 1rem 1rem;
+  width: 100%;
+}
+
+.meta {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+i {
+  margin-right: 0.5rem;
+}

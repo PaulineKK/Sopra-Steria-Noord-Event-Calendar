@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.featured-container {
+  max-width: 70vw;
+}
+
+.list-container {
+  margin-top: 1.5rem;
+}
+
+app-featured-event {
+  margin-bottom: 2rem;
+}

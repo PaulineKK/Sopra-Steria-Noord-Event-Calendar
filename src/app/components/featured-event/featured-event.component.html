@@ -1,0 +1,19 @@
+<div class="container category-{{ event().category.toLowerCase() }}">
+  <div class="info">
+    <div class="title">
+      <i [class]="getIconClass(event().category.toLowerCase())"></i> {{ event().title }}
+    </div>
+
+    <p class="description">{{ event().description }}</p>
+
+    <p class="meta">
+      <time [attr.datetime]="event().startDateTime">
+        {{ event().startDateTime | date : 'd MMM HH:mm' }}
+      </time>
+      <span class="location">{{ event().location }}</span>
+    </p>
+  </div>
+  @if(event().qrCode; as qrCode){
+  <div class="registering">Meer info<qrcode [qrdata]="qrCode" [width]="160" /></div>
+  }
+</div>

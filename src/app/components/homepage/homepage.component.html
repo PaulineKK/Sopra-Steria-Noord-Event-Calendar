@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="featured-container">
+    <app-featured-event [event]="featuredEvents()[0]"></app-featured-event>
+
+    @if (loopedEvent(); as event) {
+    <app-featured-event [event]="event"></app-featured-event>
+    }
+
+    <img src="assets/logo.png" alt="Sopra Steria Noord Kalender" />
+  </div>
+
+  <div class="list-container">
+    @for (event of featuredEvents(); track event.title; let index = $index) {
+    <app-list-event
+      [event]="event"
+      [isFeatured]="index === 0 || event.title === loopedEvent()?.title"
+    ></app-list-event>
+    }
+  </div>
+</div>

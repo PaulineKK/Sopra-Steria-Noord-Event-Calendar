@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: var(--TOKEN-FONT-LIGHT, 'Light'), 'Helvetica Neue', Helvetica, Verdana, Arial,
+    sans-serif;
+}
+
+.category-training {
+  border: 4px solid #5a9bd4;
+}
+
+.category-fun {
+  border: 4px solid #d78abf;
+}
+
+.category-informative {
+  border: 4px solid #70b77e;
+}
+
+.category-business {
+  border: 4px solid #e0a158;
+}
+
+.category-external {
+  border: 4px solid #9c7ed6;
+}
+
+.category-special {
+  border: 4px solid #e07a5f;
+}

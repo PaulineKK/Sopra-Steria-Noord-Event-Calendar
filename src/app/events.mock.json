@@ -1,0 +1,49 @@
+[
+  {
+    "id": "1",
+    "title": "Ballen gooien!",
+    "description": "een gezellig avondje bij Boel Groningen voor een avondje jeu-de-boules spelen met een heleboel leuke collega's.",
+    "category": "Fun",
+    "startDateTime": "2026-11-28T16:30:00.000Z",
+    "endDateTime": "2026-11-28T19:00:00.000Z",
+    "location": "De Boel",
+    "qrCode": "https://www.youtube.com/watch?v=pat2c33sbog"
+  },
+  {
+    "id": "2",
+    "title": "GitHub Copilot Training",
+    "description": "Learn about GitHub Copilot, a great way to prepare for the exam.",
+    "category": "Training",
+    "startDateTime": "2026-11-29T11:00:00.000Z",
+    "endDateTime": "2026-11-29T12:00:00.000Z",
+    "location": "0.3 Opleidingsruimte",
+    "qrCode": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  {
+    "id": "3",
+    "title": "Sustain Live #2 | Join a story of Solidarity",
+    "description": "Join a story of Solidarity at our office in Nieuwegein",
+    "category": "Informative",
+    "startDateTime": "2026-11-29T10:00:00.000Z",
+    "endDateTime": "2026-11-29T10:45:00.000Z",
+    "location": "Live Event"
+  },
+  {
+    "id": "4",
+    "title": "FAUTO|Q",
+    "description": "pizza time, Crackoon, Pauze, Treevenge, Cooties. Wat wil je nog meer?",
+    "category": "Fun",
+    "startDateTime": "2026-12-18T16:30:00.000Z",
+    "endDateTime": "2026-12-18T21:30:00.000Z",
+    "location": "0.3 Opleidingsruimte"
+  },
+  {
+    "id": "5",
+    "title": "Title",
+    "description": "Description",
+    "category": "Business",
+    "startDateTime": "2027-01-01T11:00:00.000Z",
+    "endDateTime": "2027-01-01T13:00:00.000Z",
+    "location": "Waar"
+  }
+]

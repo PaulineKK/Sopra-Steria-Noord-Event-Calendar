@@ -1,0 +1,11 @@
+@if(showForm()) {
+<app-new-event (closeForm)="showForm.set(false)"></app-new-event>
+} @else {
+<button (click)="onAddEvent()"><i [class]="'fas fa-plus'"></i>Add event</button>
+
+<div class="list-container">
+  @for (event of events(); track event.title; let index = $index) {
+  <app-list-event [event]="event"></app-list-event>
+  }
+</div>
+}

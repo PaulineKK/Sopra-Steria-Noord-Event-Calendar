@@ -1,0 +1,22 @@
+<div
+  class="container category-{{ event().category.toLowerCase() }}"
+  [class.featured]="isFeatured()"
+>
+  <div class="date">
+    {{ event().startDateTime | date : 'EEE' }}
+    <span class="event-date-day">{{ event().startDateTime | date : 'dd' }}</span>
+    {{ event().startDateTime | date : 'MMM' }}
+  </div>
+  <div class="info">
+    <p class="meta">
+      <span class="location">{{ event().location }}</span>
+      <time [attr.datetime]="event().startDateTime">
+        {{ event().startDateTime | date : 'HH:mm' }} - {{ event().endDateTime | date : 'HH:mm' }}
+      </time>
+    </p>
+
+    <div class="title">
+      <i [class]="getIconClass(event().category.toLowerCase())"></i>{{ event().title }}
+    </div>
+  </div>
+</div>
