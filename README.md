@@ -1,59 +1,17 @@
-# EventCalendar
+Using this project;
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0.
+1. clone the project
+2. Use command npm i to install packages
+3. Use command npm run start to run the project
+4. open http://localhost:4200 to see the homepage
 
-## Development server
+Setup:
+I have added two routes that route to two pages.
 
-To start a local development server, run:
+1. Homepage -> This will be shown on the tv's. It shows the 5 upcoming events, with 2 of them featured. When you open on http://localhost:4200 you will this homepage.
+2. Admin page -> Here is a list of all the events. It also has a button to add new events. You can access this page by opening http://localhost:4200/admin.
 
-```bash
-ng serve
-```
+For as long as there no real BE to work with, I have used HTTP Interceptors to mock the data. I have added an events mock json with 5 events. When you add an event it will be added, but only temporary, when you refresh the app it will be gone.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This is an unfinished project, I will work on it in the coming weeks.
+Unittests do not work as of yet.
